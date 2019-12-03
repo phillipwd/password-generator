@@ -12,21 +12,26 @@ function generatePassword() {
     var low = confirm("Would you like to use lower case letters?");
     var up = confirm("Would you like to use upper case letters?");
     var len = prompt("How many characters would you like? Choose 8-128");
-    console.log(nums);
-    console.log(sp);
-    console.log(low);
-    console.log(up);
-    console.log(len);
-    
-    
-    
-    
-    
+    var numbers = [1,2,3,4,5,6,7,8,9] //is numbers
+    var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];//is letters    
+    var special = ["!","#","$","%","&","(",")","*","+","-",".","/",":",";","<","=",">","?","@","[","]","^","_","`","{","|","}","~"]//is characters
 
-    // 
+    var poss = [];
+    
+    // for (i = 0; i < inputsValue[4]; i++){
+    //     //works from
+    //     var types = Math.floor(Math.random()*inputsValue.length); // picks number from short array
+
+        // console.log(typeArray.length);
+        
+        // console.log("types is " + types);// shows number
+        // console.log(typeArray[types]); // shows variable name
+        // to
+    }
+  
     alert("ive been clicked");
-    return "password";
-}
+    // return "password";
+// }
 
 // Write password to the #password input
 function writePassword() {
