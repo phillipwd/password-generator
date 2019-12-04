@@ -23,15 +23,16 @@ function generatePassword() {
         }
     }
     var len = prompt("How many characters would you like? Choose 8-128");
-    console.log("length is " + len);
+    //console.log("length is " + len);
     
     var numbers = [1,2,3,4,5,6,7,8,9]; //is numbers
     var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];//is letters    
     var special = ["!","#","$","%","&","(",")","*","+","-",".","/",":",";","<","=",">","?","@","[","]","^","_","`","{","|","}","~"];//is characters
     var upper = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
     var poss = [];
-    var pw = [];
-
+    var password = [];
+    var pw = []
+    
     if(nums){
         poss = poss.concat(numbers);
         //console.log("nums chosen, " + numbers.length + " characters.");
@@ -50,16 +51,16 @@ function generatePassword() {
         poss = poss.concat(up);
     }
     
-    console.log("poss is " + poss.length);
-    
+    //console.log("poss is " + poss.length);
     for(i = 0; i < len; i++){
         pw[i] = poss[Math.floor(Math.random()*poss.length)];
-        console.log(pw[i]);
+        console.log(password[i]);
+        password = password + pw[i];
         
     }
   
-    alert("ive been clicked");
-    // return "password";
+    //alert("ive been clicked");
+    return password;
 }
 
 // Write password to the #password input
