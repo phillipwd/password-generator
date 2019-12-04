@@ -1,0 +1,57 @@
+.container{
+    background-color: azure;
+}
+
+.BigGen{
+    background-color: transparent;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.formBody{
+    background-color: white;
+    width: 75vw;
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.littleGen{
+    background-color: transparent;
+    width: 65vw;
+    padding: 10px 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.outField{
+    background-color: transparent;
+    width: 65vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.buttons{
+    background-color: transparent;
+    width: 65vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+}
+textarea{
+    height: 200px;
+    width: 65vw;
+    margin: 0 auto;
+}
+#generate{
+    background-color: rgb(200, 28, 28);
+}
