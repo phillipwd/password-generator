@@ -48,13 +48,13 @@ function generatePassword() {
         //console.log("low chosen, " + letters.length + " characters.");
     }
     if(up){
-        poss = poss.concat(up);
+        poss = poss.concat(upper);
     }
     
     //console.log("poss is " + poss.length);
     for(i = 0; i < len; i++){
         pw[i] = poss[Math.floor(Math.random()*poss.length)];
-        console.log(password[i]);
+        console.log(pw[i]);
         password = password + pw[i];
         
     }
